@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IELTS Reading Test Configuration",
+  "description": "Schema for test-data.json — the single configuration file for the IELTS Reading simulator",
+  "type": "object",
+  "required": ["title", "duration", "branding", "cta", "passages"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Test title displayed on welcome screen"
+    },
+    "duration": {
+      "type": "integer",
+      "description": "Test duration in seconds",
+      "default": 3600,
+      "minimum": 60
+    },
+    "branding": {
+      "$ref": "#/definitions/BrandingConfig"
+    },
+    "cta": {
+      "$ref": "#/definitions/CTAConfig"
+    },
+    "passages": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Passage" },
+      "minItems": 1
+    }
+  },
+  "definitions": {
+    "BrandingConfig": {
+      "type": "object",
+      "required": ["title", "primaryColor"],
+      "properties": {
+        "logoUrl": { "type": "string", "format": "uri" },
+        "title": { "type": "string" },
+        "primaryColor": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+        "accentColor": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$", "default": "#dc2626" }
+      }
+    },
+    "CTAConfig": {
+      "type": "object",
+      "required": ["heading", "buttonText", "buttonUrl"],
+      "properties": {
+        "heading": { "type": "string" },
+        "description": { "type": "string" },
+        "buttonText": { "type": "string" },
+        "buttonUrl": { "type": "string", "format": "uri" },
+        "buttonColor": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
+      }
+    },
+    "Passage": {
+      "type": "object",
+      "required": ["id", "title", "content", "questionGroups"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "content": { "type": "string", "description": "HTML-safe passage body text" },
+        "questionGroups": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/QuestionGroup" },
+          "minItems": 1
+        }
+      }
+    },
+    "QuestionGroup": {
+      "type": "object",
+      "required": ["id", "type", "title", "instruction", "questions"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": [
+            "true-false-not-given",
+            "yes-no-not-given",
+            "multiple-choice-single",
+            "multiple-choice-multi",
+            "matching-headings",
+            "note-completion",
+            "summary-completion",
+            "matching-information",
+            "matching-features",
+            "matching-sentence-endings"
+          ]
+        },
+        "title": { "type": "string" },
+        "instruction": { "type": "string" },
+        "wordLimit": { "type": "string" },
+        "chooseCount": { "type": "integer", "minimum": 2 },
+        "navGrouped": { "type": "boolean", "default": false },
+        "options": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/MatchOption" },
+          "description": "Shared options for all matching types: heading options, paragraph labels, feature categories, sentence endings"
+        },
+        "questions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Question" },
+          "minItems": 1
+        }
+      }
+    },
+    "Question": {
+      "type": "object",
+      "required": ["id", "number", "text", "correctAnswer", "explanation"],
+      "properties": {
+        "id": { "type": "string" },
+        "number": { "type": "integer", "minimum": 1 },
+        "text": { "type": "string" },
+        "options": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Option" }
+        },
+        "correctAnswer": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ]
+        },
+        "acceptableAnswers": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Alternative correct answers for text input types (any match = correct). Not used for multi-select."
+        },
+        "passageHighlight": { "$ref": "#/definitions/PassageHighlight" },
+        "explanation": { "type": "string", "description": "Explanation in Russian" }
+      }
+    },
+    "Option": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    },
+    "MatchOption": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": { "type": "string" },
+        "text": { "type": "string" }
+      },
+      "description": "Shared option type for all matching/heading question types"
+    },
+    "PassageHighlight": {
+      "type": "object",
+      "required": ["startText", "endText"],
+      "properties": {
+        "startText": { "type": "string" },
+        "endText": { "type": "string" }
+      }
+    }
+  }
+}
