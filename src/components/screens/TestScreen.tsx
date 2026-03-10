@@ -117,7 +117,7 @@ export default function TestScreen({
         partNumber={passageIndex + 1}
         instructionText={instructionText}
       />
-      <div className="flex-1 overflow-hidden pb-20">
+      <div className="flex-1 overflow-hidden pb-20 flex flex-col">
         <SplitScreen
           left={
             <PassageViewer

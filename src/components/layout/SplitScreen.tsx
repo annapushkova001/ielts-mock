@@ -12,22 +12,22 @@ export default function SplitScreen({ left, right }: SplitScreenProps) {
   return (
     <>
       {/* Desktop: side-by-side resizable panels */}
-      <div className="hidden md:flex flex-1 overflow-hidden">
-        <PanelGroup orientation="horizontal">
-          <Panel defaultSize={50} minSize={30}>
+      <div className="hidden md:flex flex-1 min-h-0">
+        <PanelGroup orientation="horizontal" className="h-full">
+          <Panel defaultSize={50} minSize={30} className="h-full">
             <div className="h-full overflow-y-auto">{left}</div>
           </Panel>
           <PanelResizeHandle className="w-2 bg-gray-200 hover:bg-gray-400 transition-colors flex items-center justify-center cursor-col-resize">
             <span className="text-gray-500 text-xs">↔</span>
           </PanelResizeHandle>
-          <Panel defaultSize={50} minSize={30}>
+          <Panel defaultSize={50} minSize={30} className="h-full">
             <div className="h-full overflow-y-auto">{right}</div>
           </Panel>
         </PanelGroup>
       </div>
 
       {/* Mobile: tab-based toggle */}
-      <div className="md:hidden flex flex-col flex-1 overflow-hidden">
+      <div className="md:hidden flex flex-col flex-1 min-h-0">
         <div className="flex border-b border-gray-200">
           <button
             className={`flex-1 py-2 text-center text-sm font-medium cursor-pointer ${
