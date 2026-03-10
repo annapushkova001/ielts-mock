@@ -105,16 +105,30 @@ export default function TestScreen({
 
   const isFlagged = session.reviewFlags.includes(currentQuestionId);
 
-  // Scroll to current question when navigation changes
+  // Scroll to current question with offset + auto-focus first input
   useEffect(() => {
     if (!currentQuestionId) return;
-    // Small delay to let the DOM update after passage switch
     const timer = setTimeout(() => {
       const el = document.getElementById(`question-${currentQuestionId}`);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (!el) return;
+
+      // Scroll with offset so the question isn't glued to the top
+      const scrollContainer = el.closest('.overflow-y-auto');
+      if (scrollContainer) {
+        const containerRect = scrollContainer.getBoundingClientRect();
+        const elRect = el.getBoundingClientRect();
+        const offset = elRect.top - containerRect.top + scrollContainer.scrollTop - 16;
+        scrollContainer.scrollTo({ top: offset, behavior: 'smooth' });
       }
-    }, 50);
+
+      // Auto-focus first interactive element in the question
+      const focusable = el.querySelector<HTMLElement>(
+        'input:not([disabled]), select:not([disabled]), textarea:not([disabled])'
+      );
+      if (focusable) {
+        focusable.focus({ preventScroll: true });
+      }
+    }, 80);
     return () => clearTimeout(timer);
   }, [currentQuestionId]);
 
