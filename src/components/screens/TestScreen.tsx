@@ -63,7 +63,7 @@ export default function TestScreen({
     return allGroups[allGroups.length - 1];
   }, [allGroups, currentQuestionIndex]);
 
-  const { passageIndex, group: currentGroup } = findCurrentGroup();
+  const { passageIndex } = findCurrentGroup();
   const currentPassage = config.passages[passageIndex];
 
   // Current question ID for flagging
@@ -94,9 +94,13 @@ export default function TestScreen({
     }
   }, [config.passages, onSetCurrentQuestion]);
 
-  // Instruction text
-  const firstQ = currentGroup.questions[0];
-  const lastQ = currentGroup.questions[currentGroup.questions.length - 1];
+  // All question groups for the current passage
+  const passageGroups = currentPassage.questionGroups;
+
+  // Instruction text — full range for the passage
+  const allPassageQuestions = passageGroups.flatMap(g => g.questions);
+  const firstQ = allPassageQuestions[0];
+  const lastQ = allPassageQuestions[allPassageQuestions.length - 1];
   const instructionText = `Read the text and answer questions ${firstQ.number}–${lastQ.number}`;
 
   const isFlagged = session.reviewFlags.includes(currentQuestionId);
@@ -127,21 +131,22 @@ export default function TestScreen({
           }
           right={
             <div className="p-4 md:p-6 overflow-y-auto h-full">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-sm text-gray-500">
-                  Question {currentGroup.questions[0].number}
-                  {currentGroup.questions.length > 1 && `–${currentGroup.questions[currentGroup.questions.length - 1].number}`}
-                </span>
+              <div className="flex items-center justify-end mb-4">
                 <FlagButton
                   isFlagged={isFlagged}
                   onToggle={() => onToggleFlag(currentQuestionId)}
                 />
               </div>
-              <QuestionRenderer
-                questionGroup={currentGroup}
-                answers={session.answers}
-                onAnswer={onAnswer}
-              />
+              <div className="space-y-8">
+                {passageGroups.map(group => (
+                  <QuestionRenderer
+                    key={group.id}
+                    questionGroup={group}
+                    answers={session.answers}
+                    onAnswer={onAnswer}
+                  />
+                ))}
+              </div>
             </div>
           }
         />
