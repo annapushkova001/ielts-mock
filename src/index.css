@@ -63,3 +63,15 @@ body {
 .high-contrast .text-gray-400 {
   color: #000000 !important;
 }
+
+/* Results page animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
