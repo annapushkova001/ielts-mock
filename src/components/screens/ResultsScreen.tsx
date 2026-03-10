@@ -34,6 +34,22 @@ export default function ResultsScreen({ config, result, onRetake }: ResultsScree
 
   const { cta } = config;
 
+  const ctaBlock = (
+    <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center" style={{ borderTop: `4px solid ${cta.buttonColor || config.branding.accentColor || '#dc2626'}` }}>
+      <h2 className="text-2xl font-bold mb-2">{cta.heading}</h2>
+      {cta.description && <p className="text-gray-600 mb-4">{cta.description}</p>}
+      <a
+        href={cta.buttonUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-8 py-3 text-white font-semibold rounded-lg text-lg transition-opacity hover:opacity-90"
+        style={{ backgroundColor: cta.buttonColor || config.branding.accentColor || '#dc2626' }}
+      >
+        {cta.buttonText}
+      </a>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Band Score Header */}
@@ -61,6 +77,9 @@ export default function ResultsScreen({ config, result, onRetake }: ResultsScree
             </div>
           ))}
         </div>
+
+        {/* CTA Block — after score breakdown */}
+        {ctaBlock}
 
         {/* Per-Question Review */}
         <div>
@@ -128,20 +147,8 @@ export default function ResultsScreen({ config, result, onRetake }: ResultsScree
           </div>
         </div>
 
-        {/* CTA Block */}
-        <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center" style={{ borderTop: `4px solid ${cta.buttonColor || config.branding.accentColor || '#dc2626'}` }}>
-          <h2 className="text-2xl font-bold mb-2">{cta.heading}</h2>
-          {cta.description && <p className="text-gray-600 mb-4">{cta.description}</p>}
-          <a
-            href={cta.buttonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-3 text-white font-semibold rounded-lg text-lg transition-opacity hover:opacity-90"
-            style={{ backgroundColor: cta.buttonColor || config.branding.accentColor || '#dc2626' }}
-          >
-            {cta.buttonText}
-          </a>
-        </div>
+        {/* CTA Block — after detailed review */}
+        {ctaBlock}
 
         {/* Retake */}
         <div className="text-center pb-8">

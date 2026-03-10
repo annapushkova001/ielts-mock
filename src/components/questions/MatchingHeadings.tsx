@@ -116,12 +116,13 @@ export default function MatchingHeadings({ questionGroup, answers, onAnswer }: P
             const assignedOptionId = answers[question.id] as string | undefined;
             const assignedOption = options.find(o => o.id === assignedOptionId);
             return (
-              <DropZone
-                key={question.id}
-                id={question.id}
-                questionNumber={question.number}
-                assignedText={assignedOption?.text}
-              />
+              <div key={question.id} id={`question-${question.id}`}>
+                <DropZone
+                  id={question.id}
+                  questionNumber={question.number}
+                  assignedText={assignedOption?.text}
+                />
+              </div>
             );
           })}
         </div>

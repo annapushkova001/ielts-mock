@@ -18,7 +18,7 @@ export default function SummaryCompletion({ questionGroup, answers, onAnswer }: 
       </div>
       <div className="leading-relaxed">
         {questionGroup.questions.map(question => (
-          <span key={question.id} className="inline">
+          <span key={question.id} id={`question-${question.id}`} className="inline">
             <span>{question.text.split('_____')[0]}</span>
             <input
               type="text"

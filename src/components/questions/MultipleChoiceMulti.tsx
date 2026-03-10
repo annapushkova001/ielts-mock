@@ -33,7 +33,7 @@ export default function MultipleChoiceMulti({ questionGroup, answers, onAnswer }
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" id={`question-${firstQ.id}`}>
       <div className="mb-4">
         <h3 className="font-bold text-lg mb-1">{questionGroup.title}</h3>
         <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: questionGroup.instruction }} />

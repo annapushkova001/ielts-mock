@@ -14,7 +14,7 @@ export default function YesNoNotGiven({ questionGroup, answers, onAnswer }: Prop
         <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: questionGroup.instruction }} />
       </div>
       {questionGroup.questions.map(question => (
-        <div key={question.id} className="space-y-2">
+        <div key={question.id} id={`question-${question.id}`} className="space-y-2">
           <div className="flex gap-2">
             <span className="inline-flex items-center justify-center w-8 h-8 border-2 border-gray-800 rounded font-bold text-sm shrink-0">
               {question.number}

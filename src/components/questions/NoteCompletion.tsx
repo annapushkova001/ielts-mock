@@ -18,7 +18,7 @@ export default function NoteCompletion({ questionGroup, answers, onAnswer }: Pro
       </div>
       <ul className="space-y-3 list-disc list-inside">
         {questionGroup.questions.map(question => (
-          <li key={question.id} className="text-sm">
+          <li key={question.id} id={`question-${question.id}`} className="text-sm">
             <span>{question.text.split('_____')[0]}</span>
             <input
               type="text"

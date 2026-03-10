@@ -16,7 +16,7 @@ export default function MatchingFeatures({ questionGroup, answers, onAnswer }: P
         <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: questionGroup.instruction }} />
       </div>
       {questionGroup.questions.map(question => (
-        <div key={question.id} className="flex items-start gap-3">
+        <div key={question.id} id={`question-${question.id}`} className="flex items-start gap-3">
           <span className="inline-flex items-center justify-center w-8 h-8 border-2 border-gray-800 rounded font-bold text-sm shrink-0">
             {question.number}
           </span>

@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import Header from '../layout/Header';
 import InstructionBar from '../layout/InstructionBar';
 import SplitScreen from '../layout/SplitScreen';
@@ -104,6 +104,19 @@ export default function TestScreen({
   const instructionText = `Read the text and answer questions ${firstQ.number}–${lastQ.number}`;
 
   const isFlagged = session.reviewFlags.includes(currentQuestionId);
+
+  // Scroll to current question when navigation changes
+  useEffect(() => {
+    if (!currentQuestionId) return;
+    // Small delay to let the DOM update after passage switch
+    const timer = setTimeout(() => {
+      const el = document.getElementById(`question-${currentQuestionId}`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 50);
+    return () => clearTimeout(timer);
+  }, [currentQuestionId]);
 
   return (
     <div className="flex flex-col h-screen">
