@@ -1,0 +1,568 @@
+{
+  "title": "IELTS Academic Reading Practice Test 1",
+  "duration": 3600,
+  "branding": {
+    "title": "IELTS Mock",
+    "primaryColor": "#000000",
+    "accentColor": "#dc2626"
+  },
+  "cta": {
+    "heading": "Хотите улучшить свой результат?",
+    "description": "Запишитесь на курс подготовки к IELTS и получите индивидуальный план обучения от опытных преподавателей.",
+    "buttonText": "Записаться на курс",
+    "buttonUrl": "https://example.com/ielts-course",
+    "buttonColor": "#dc2626"
+  },
+  "passages": [
+    {
+      "id": "passage-1",
+      "title": "The History of Timekeeping",
+      "content": "<p>The measurement of time has been a fundamental concern of human civilizations since ancient times. Early humans tracked the passage of days by observing the sun's movement across the sky, while the phases of the moon provided a natural calendar for longer periods.</p><p>The ancient Egyptians were among the first to develop sophisticated timekeeping devices. Around 1500 BCE, they created sundials that used the shadow cast by a vertical stick to indicate the time of day. These early sundials divided daylight into twelve equal parts, though the length of each 'hour' varied with the seasons.</p><p>Water clocks, known as clepsydras, represented a significant advancement in timekeeping technology. Unlike sundials, they could measure time during the night and on cloudy days. The simplest water clocks consisted of a bowl with a small hole in the bottom; as water dripped out, markings on the inside of the bowl indicated the passage of time.</p><p>Mechanical clocks first appeared in European monasteries during the 13th century. These early devices used a system of weights and gears to mark the hours, though they were notoriously inaccurate, often losing or gaining as much as an hour per day. The invention of the pendulum clock by Christiaan Huygens in 1656 dramatically improved accuracy, reducing errors to less than a minute per day.</p><p>The development of marine chronometers in the 18th century solved one of the greatest challenges of the age: determining longitude at sea. John Harrison, a self-taught clockmaker, spent decades perfecting a timepiece that could maintain accuracy despite the rolling motion of a ship, changes in temperature, and variations in humidity.</p><p>The 20th century brought revolutionary changes to timekeeping. Quartz clocks, introduced in the 1920s, used the vibrations of a quartz crystal to keep time with unprecedented precision. By the 1960s, atomic clocks had been developed that measured time based on the vibrations of cesium atoms, achieving accuracy to within one second in millions of years.</p><p>Today, the Global Positioning System relies on a network of atomic clocks orbiting the Earth in satellites, enabling precise navigation and timing services worldwide. Modern smartphones synchronize their clocks with these satellites, giving ordinary people access to timekeeping accuracy that would have seemed miraculous to the ancient Egyptians who first divided the day into hours.</p>",
+      "questionGroups": [
+        {
+          "id": "qg-1",
+          "type": "true-false-not-given",
+          "title": "Questions 1–5",
+          "instruction": "Do the following statements agree with the information given in the passage? Write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, <strong>NOT GIVEN</strong> if there is no information on this.",
+          "questions": [
+            {
+              "id": "q-1",
+              "number": 1,
+              "text": "The ancient Egyptians created sundials around 1500 BCE.",
+              "options": [
+                { "id": "true", "text": "TRUE" },
+                { "id": "false", "text": "FALSE" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "true",
+              "explanation": "В тексте сказано: 'Around 1500 BCE, they created sundials'.",
+              "passageHighlight": { "startText": "Around 1500 BCE", "endText": "indicate the time of day" }
+            },
+            {
+              "id": "q-2",
+              "number": 2,
+              "text": "Water clocks were more accurate than sundials.",
+              "options": [
+                { "id": "true", "text": "TRUE" },
+                { "id": "false", "text": "FALSE" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "not-given",
+              "explanation": "В тексте говорится, что водяные часы могли работать ночью и в облачные дни, но прямого сравнения точности нет.",
+              "passageHighlight": { "startText": "Water clocks, known as clepsydras", "endText": "the passage of time" }
+            },
+            {
+              "id": "q-3",
+              "number": 3,
+              "text": "Pendulum clocks reduced timekeeping errors to less than a minute per day.",
+              "options": [
+                { "id": "true", "text": "TRUE" },
+                { "id": "false", "text": "FALSE" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "true",
+              "explanation": "В тексте прямо сказано: 'reducing errors to less than a minute per day'.",
+              "passageHighlight": { "startText": "The invention of the pendulum clock", "endText": "less than a minute per day" }
+            },
+            {
+              "id": "q-4",
+              "number": 4,
+              "text": "John Harrison received a large reward for inventing the marine chronometer.",
+              "options": [
+                { "id": "true", "text": "TRUE" },
+                { "id": "false", "text": "FALSE" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "not-given",
+              "explanation": "В тексте не упоминается награда, полученная Харрисоном.",
+              "passageHighlight": { "startText": "John Harrison, a self-taught clockmaker", "endText": "variations in humidity" }
+            },
+            {
+              "id": "q-5",
+              "number": 5,
+              "text": "Quartz clocks were introduced in the 1920s.",
+              "options": [
+                { "id": "true", "text": "TRUE" },
+                { "id": "false", "text": "FALSE" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "true",
+              "explanation": "В тексте сказано: 'Quartz clocks, introduced in the 1920s'.",
+              "passageHighlight": { "startText": "Quartz clocks, introduced in the 1920s", "endText": "unprecedented precision" }
+            }
+          ]
+        },
+        {
+          "id": "qg-2",
+          "type": "multiple-choice-single",
+          "title": "Questions 6–8",
+          "instruction": "Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.",
+          "questions": [
+            {
+              "id": "q-6",
+              "number": 6,
+              "text": "What was the main limitation of early mechanical clocks?",
+              "options": [
+                { "id": "a", "text": "A They were too expensive to produce" },
+                { "id": "b", "text": "B They could only be used in monasteries" },
+                { "id": "c", "text": "C They were significantly inaccurate" },
+                { "id": "d", "text": "D They required constant maintenance" }
+              ],
+              "correctAnswer": "c",
+              "explanation": "В тексте: 'they were notoriously inaccurate, often losing or gaining as much as an hour per day'.",
+              "passageHighlight": { "startText": "These early devices used", "endText": "an hour per day" }
+            },
+            {
+              "id": "q-7",
+              "number": 7,
+              "text": "John Harrison's main achievement was:",
+              "options": [
+                { "id": "a", "text": "A inventing the pendulum clock" },
+                { "id": "b", "text": "B creating a reliable marine chronometer" },
+                { "id": "c", "text": "C developing the first water clock" },
+                { "id": "d", "text": "D improving sundial accuracy" }
+              ],
+              "correctAnswer": "b",
+              "explanation": "Харрисон создал часы для определения долготы в море.",
+              "passageHighlight": { "startText": "John Harrison, a self-taught clockmaker", "endText": "variations in humidity" }
+            },
+            {
+              "id": "q-8",
+              "number": 8,
+              "text": "Modern atomic clocks measure time based on:",
+              "options": [
+                { "id": "a", "text": "A the vibrations of quartz crystals" },
+                { "id": "b", "text": "B the movement of pendulums" },
+                { "id": "c", "text": "C the vibrations of cesium atoms" },
+                { "id": "d", "text": "D satellite signals" }
+              ],
+              "correctAnswer": "c",
+              "explanation": "В тексте: 'atomic clocks had been developed that measured time based on the vibrations of cesium atoms'.",
+              "passageHighlight": { "startText": "atomic clocks had been developed", "endText": "millions of years" }
+            }
+          ]
+        },
+        {
+          "id": "qg-3",
+          "type": "note-completion",
+          "title": "Questions 9–13",
+          "instruction": "Complete the notes below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.",
+          "wordLimit": "ONE WORD ONLY",
+          "questions": [
+            {
+              "id": "q-9",
+              "number": 9,
+              "text": "Early humans used the sun and the _____ to track time.",
+              "correctAnswer": "moon",
+              "explanation": "В тексте: 'the phases of the moon provided a natural calendar'.",
+              "passageHighlight": { "startText": "the phases of the moon", "endText": "longer periods" }
+            },
+            {
+              "id": "q-10",
+              "number": 10,
+              "text": "Egyptian sundials divided daylight into _____ equal parts.",
+              "correctAnswer": "twelve",
+              "acceptableAnswers": ["12"],
+              "explanation": "В тексте: 'divided daylight into twelve equal parts'.",
+              "passageHighlight": { "startText": "These early sundials divided", "endText": "with the seasons" }
+            },
+            {
+              "id": "q-11",
+              "number": 11,
+              "text": "The simplest water clocks used a _____ with a hole in the bottom.",
+              "correctAnswer": "bowl",
+              "explanation": "В тексте: 'a bowl with a small hole in the bottom'.",
+              "passageHighlight": { "startText": "The simplest water clocks", "endText": "small hole in the bottom" }
+            },
+            {
+              "id": "q-12",
+              "number": 12,
+              "text": "Early mechanical clocks used a system of weights and _____.",
+              "correctAnswer": "gears",
+              "explanation": "В тексте: 'a system of weights and gears'.",
+              "passageHighlight": { "startText": "These early devices used a system", "endText": "to mark the hours" }
+            },
+            {
+              "id": "q-13",
+              "number": 13,
+              "text": "The GPS relies on a network of atomic clocks orbiting the Earth in _____.",
+              "correctAnswer": "satellites",
+              "explanation": "В тексте: 'a network of atomic clocks orbiting the Earth in satellites'.",
+              "passageHighlight": { "startText": "the Global Positioning System relies", "endText": "timing services worldwide" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "title": "Urban Vertical Farming",
+      "content": "<h2>A</h2><p>As the global population continues to grow, the demand for food production increases correspondingly. Traditional agriculture faces mounting challenges: arable land is being lost to urbanization, water resources are becoming scarcer, and climate change threatens crop yields in many regions. In response to these pressures, a new approach to food production has emerged — vertical farming.</p><h2>B</h2><p>Vertical farming involves growing crops in vertically stacked layers, typically within controlled indoor environments. These facilities can be housed in skyscrapers, converted warehouses, shipping containers, or purpose-built structures. The concept was popularized by Dr. Dickson Despommier, a professor at Columbia University, who published his influential book 'The Vertical Farm' in 2010.</p><h2>C</h2><p>One of the primary advantages of vertical farming is its efficient use of space. A single vertical farm can produce the equivalent of several hectares of traditional farmland while occupying a fraction of the ground area. This makes it particularly attractive for urban settings where land is expensive and scarce. Additionally, by locating food production close to consumers, vertical farms significantly reduce transportation costs and the carbon emissions associated with food miles.</p><h2>D</h2><p>Vertical farms typically employ hydroponic, aeroponic, or aquaponic growing systems rather than soil-based cultivation. Hydroponic systems grow plants in nutrient-rich water solutions, while aeroponic systems suspend plant roots in the air and deliver nutrients through a fine mist. Aquaponic systems combine fish farming with plant cultivation, using fish waste as a natural fertilizer. These soilless methods can use up to 95% less water than conventional farming.</p><h2>E</h2><p>Climate control is another significant benefit. By growing crops indoors, vertical farms eliminate the risks associated with unpredictable weather, seasonal limitations, and pest infestations. LED lighting systems can be calibrated to provide the optimal light spectrum for each crop type, and temperature, humidity, and CO2 levels can be precisely controlled. This results in faster growth cycles and higher yields — many vertical farms report harvesting crops 10 to 15 times per year, compared to one or two harvests annually for outdoor farms.</p><h2>F</h2><p>Despite these advantages, vertical farming faces considerable economic challenges. The initial capital investment required to build a vertical farm is substantial, often running into tens of millions of dollars. Energy costs are particularly significant, as artificial lighting and climate control systems consume large amounts of electricity. Critics argue that until renewable energy becomes more affordable and widely available, the environmental benefits of vertical farming may be partially offset by its energy consumption.</p><h2>G</h2><p>The range of crops suitable for vertical farming is currently limited. Leafy greens, herbs, and some small fruits such as strawberries grow well in vertical systems, but staple crops like wheat, rice, and corn remain impractical due to their size and growing requirements. Research is ongoing to develop varieties better suited to indoor cultivation, but for now, vertical farming complements rather than replaces traditional agriculture.</p>",
+      "questionGroups": [
+        {
+          "id": "qg-4",
+          "type": "matching-information",
+          "title": "Questions 14–18",
+          "instruction": "Which paragraph contains the following information? Write the correct letter, <strong>A–G</strong>.",
+          "options": [
+            { "id": "A", "text": "Paragraph A" },
+            { "id": "B", "text": "Paragraph B" },
+            { "id": "C", "text": "Paragraph C" },
+            { "id": "D", "text": "Paragraph D" },
+            { "id": "E", "text": "Paragraph E" },
+            { "id": "F", "text": "Paragraph F" },
+            { "id": "G", "text": "Paragraph G" }
+          ],
+          "questions": [
+            {
+              "id": "q-14",
+              "number": 14,
+              "text": "A reference to the financial costs of establishing a vertical farm",
+              "correctAnswer": "F",
+              "explanation": "В параграфе F: 'The initial capital investment... often running into tens of millions of dollars'.",
+              "passageHighlight": { "startText": "The initial capital investment", "endText": "tens of millions of dollars" }
+            },
+            {
+              "id": "q-15",
+              "number": 15,
+              "text": "A comparison of harvest frequency between vertical and traditional farms",
+              "correctAnswer": "E",
+              "explanation": "В параграфе E: 'harvesting crops 10 to 15 times per year, compared to one or two harvests annually'.",
+              "passageHighlight": { "startText": "many vertical farms report", "endText": "for outdoor farms" }
+            },
+            {
+              "id": "q-16",
+              "number": 16,
+              "text": "A mention of the person who helped popularize vertical farming",
+              "correctAnswer": "B",
+              "explanation": "В параграфе B: 'The concept was popularized by Dr. Dickson Despommier'.",
+              "passageHighlight": { "startText": "The concept was popularized", "endText": "in 2010" }
+            },
+            {
+              "id": "q-17",
+              "number": 17,
+              "text": "Details about the types of growing systems used in vertical farms",
+              "correctAnswer": "D",
+              "explanation": "Параграф D описывает гидропонные, аэропонные и аквапонные системы.",
+              "passageHighlight": { "startText": "Vertical farms typically employ", "endText": "conventional farming" }
+            },
+            {
+              "id": "q-18",
+              "number": 18,
+              "text": "Information about which crops are currently unsuitable for vertical farming",
+              "correctAnswer": "G",
+              "explanation": "Параграф G: 'staple crops like wheat, rice, and corn remain impractical'.",
+              "passageHighlight": { "startText": "staple crops like wheat", "endText": "traditional agriculture" }
+            }
+          ]
+        },
+        {
+          "id": "qg-5",
+          "type": "yes-no-not-given",
+          "title": "Questions 19–22",
+          "instruction": "Do the following statements agree with the views of the writer? Write <strong>YES</strong> if the statement agrees with the views of the writer, <strong>NO</strong> if the statement contradicts the views of the writer, <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.",
+          "questions": [
+            {
+              "id": "q-19",
+              "number": 19,
+              "text": "Vertical farming could eventually replace traditional agriculture entirely.",
+              "options": [
+                { "id": "yes", "text": "YES" },
+                { "id": "no", "text": "NO" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "no",
+              "explanation": "Автор пишет: 'vertical farming complements rather than replaces traditional agriculture'.",
+              "passageHighlight": { "startText": "vertical farming complements", "endText": "traditional agriculture" }
+            },
+            {
+              "id": "q-20",
+              "number": 20,
+              "text": "Vertical farms are more environmentally friendly than traditional farms in all respects.",
+              "options": [
+                { "id": "yes", "text": "YES" },
+                { "id": "no", "text": "NO" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "no",
+              "explanation": "Автор указывает, что потребление энергии может частично нивелировать экологические преимущества.",
+              "passageHighlight": { "startText": "Critics argue that", "endText": "its energy consumption" }
+            },
+            {
+              "id": "q-21",
+              "number": 21,
+              "text": "Consumers prefer vegetables grown in vertical farms to those grown outdoors.",
+              "options": [
+                { "id": "yes", "text": "YES" },
+                { "id": "no", "text": "NO" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "not-given",
+              "explanation": "В тексте нет информации о предпочтениях потребителей.",
+              "passageHighlight": { "startText": "Leafy greens, herbs", "endText": "small fruits such as strawberries" }
+            },
+            {
+              "id": "q-22",
+              "number": 22,
+              "text": "Reducing food transportation is one advantage of urban vertical farming.",
+              "options": [
+                { "id": "yes", "text": "YES" },
+                { "id": "no", "text": "NO" },
+                { "id": "not-given", "text": "NOT GIVEN" }
+              ],
+              "correctAnswer": "yes",
+              "explanation": "Автор отмечает: 'vertical farms significantly reduce transportation costs and the carbon emissions associated with food miles'.",
+              "passageHighlight": { "startText": "by locating food production", "endText": "food miles" }
+            }
+          ]
+        },
+        {
+          "id": "qg-6",
+          "type": "summary-completion",
+          "title": "Questions 23–26",
+          "instruction": "Complete the summary below. Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.",
+          "wordLimit": "NO MORE THAN TWO WORDS",
+          "questions": [
+            {
+              "id": "q-23",
+              "number": 23,
+              "text": "Vertical farms can be set up in various locations including skyscrapers and converted _____.",
+              "correctAnswer": "warehouses",
+              "explanation": "В тексте: 'skyscrapers, converted warehouses, shipping containers'.",
+              "passageHighlight": { "startText": "These facilities can be housed", "endText": "purpose-built structures" }
+            },
+            {
+              "id": "q-24",
+              "number": 24,
+              "text": "Aquaponic systems use waste from _____ to feed plants.",
+              "correctAnswer": "fish",
+              "acceptableAnswers": ["fish farming"],
+              "explanation": "В тексте: 'using fish waste as a natural fertilizer'.",
+              "passageHighlight": { "startText": "Aquaponic systems combine", "endText": "natural fertilizer" }
+            },
+            {
+              "id": "q-25",
+              "number": 25,
+              "text": "Soilless growing methods can reduce water usage by up to _____ percent.",
+              "correctAnswer": "95",
+              "acceptableAnswers": ["ninety-five", "ninety five"],
+              "explanation": "В тексте: 'use up to 95% less water than conventional farming'.",
+              "passageHighlight": { "startText": "These soilless methods", "endText": "conventional farming" }
+            },
+            {
+              "id": "q-26",
+              "number": 26,
+              "text": "LED lighting can provide the optimal light _____ for each type of crop.",
+              "correctAnswer": "spectrum",
+              "explanation": "В тексте: 'provide the optimal light spectrum for each crop type'.",
+              "passageHighlight": { "startText": "LED lighting systems", "endText": "each crop type" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passage-3",
+      "title": "The Psychology of Decision-Making",
+      "content": "<p>Every day, people make thousands of decisions, from trivial choices like what to eat for breakfast to significant ones like which career to pursue or whom to marry. While classical economics assumed that humans are rational decision-makers who carefully weigh all available options and choose the one that maximizes their utility, decades of research in psychology and behavioral economics have revealed that human decision-making is far more complex — and far more prone to systematic errors — than previously believed.</p><p>One of the most influential contributions to this field came from psychologists Daniel Kahneman and Amos Tversky, whose work in the 1970s and 1980s laid the groundwork for behavioral economics. They proposed that people rely on mental shortcuts, or heuristics, when making decisions. While these heuristics are often useful, they can also lead to predictable biases. For instance, the availability heuristic causes people to judge the likelihood of events based on how easily examples come to mind, rather than on actual statistical probability.</p><p>Another key concept is loss aversion — the tendency for people to feel the pain of a loss more strongly than the pleasure of an equivalent gain. Kahneman and Tversky demonstrated this through their prospect theory, showing that a person who loses £100 experiences a stronger emotional reaction than someone who gains £100. This asymmetry explains why people often make conservative choices to avoid potential losses, even when taking a risk would be more beneficial in the long run.</p><p>The framing effect is another well-documented bias. Research has shown that the way information is presented significantly influences decisions. For example, people respond differently to a medical treatment described as having a '90% survival rate' compared to one described as having a '10% mortality rate', even though the two descriptions are mathematically identical. This has profound implications for fields ranging from healthcare to marketing to public policy.</p><p>Decision fatigue is a more recently studied phenomenon. Studies have shown that the quality of decisions deteriorates after a long session of decision-making. In one notable study, judges were found to be significantly more likely to grant parole earlier in the day than later, suggesting that mental exhaustion leads to more conservative, default decisions. This finding has implications for anyone who must make important decisions throughout the day, from executives to teachers to doctors.</p><p>Social influences also play a crucial role in decision-making. Conformity studies, beginning with Solomon Asch's experiments in the 1950s, demonstrated that individuals will often agree with a group consensus even when the group is clearly wrong. More recent research has shown that social media amplifies these effects, creating echo chambers that reinforce existing beliefs and make people more resistant to contradictory evidence.</p><p>Understanding these biases has led to the concept of choice architecture, popularized by Richard Thaler and Cass Sunstein in their book 'Nudge'. Choice architects design the environment in which decisions are made, using insights from behavioral science to guide people toward better choices without restricting their freedom. Examples include placing healthier food options at eye level in cafeterias and making retirement savings plans opt-out rather than opt-in.</p>",
+      "questionGroups": [
+        {
+          "id": "qg-7",
+          "type": "matching-headings",
+          "title": "Questions 27–30",
+          "instruction": "Choose the correct heading for each section from the list of headings below.",
+          "options": [
+            { "id": "h-i", "text": "i. The influence of presentation on choices" },
+            { "id": "h-ii", "text": "ii. Mental shortcuts and their drawbacks" },
+            { "id": "h-iii", "text": "iii. Why losses hurt more than gains feel good" },
+            { "id": "h-iv", "text": "iv. Designing environments for better decisions" },
+            { "id": "h-v", "text": "v. The myth of the rational human" },
+            { "id": "h-vi", "text": "vi. How tiredness affects judgment" }
+          ],
+          "questions": [
+            {
+              "id": "q-27",
+              "number": 27,
+              "text": "Paragraph 2 (Kahneman and Tversky's heuristics)",
+              "correctAnswer": "h-ii",
+              "explanation": "Параграф 2 описывает ментальные шаблоны (heuristics) и их недостатки.",
+              "passageHighlight": { "startText": "They proposed that people", "endText": "actual statistical probability" }
+            },
+            {
+              "id": "q-28",
+              "number": 28,
+              "text": "Paragraph 3 (Loss aversion and prospect theory)",
+              "correctAnswer": "h-iii",
+              "explanation": "Параграф 3 о том, что потери воспринимаются сильнее, чем приобретения.",
+              "passageHighlight": { "startText": "Another key concept is loss aversion", "endText": "in the long run" }
+            },
+            {
+              "id": "q-29",
+              "number": 29,
+              "text": "Paragraph 4 (The framing effect)",
+              "correctAnswer": "h-i",
+              "explanation": "Параграф 4 о влиянии формулировки на принятие решений.",
+              "passageHighlight": { "startText": "The framing effect", "endText": "public policy" }
+            },
+            {
+              "id": "q-30",
+              "number": 30,
+              "text": "Paragraph 7 (Choice architecture)",
+              "correctAnswer": "h-iv",
+              "explanation": "Параграф 7 о дизайне среды для лучших решений (choice architecture).",
+              "passageHighlight": { "startText": "Understanding these biases", "endText": "opt-out rather than opt-in" }
+            }
+          ]
+        },
+        {
+          "id": "qg-8",
+          "type": "matching-features",
+          "title": "Questions 31–34",
+          "instruction": "Match each finding or concept with the correct researcher(s). Write the correct letter, <strong>A–D</strong>.",
+          "options": [
+            { "id": "A", "text": "A Daniel Kahneman and Amos Tversky" },
+            { "id": "B", "text": "B Solomon Asch" },
+            { "id": "C", "text": "C Richard Thaler and Cass Sunstein" },
+            { "id": "D", "text": "D Classical economists" }
+          ],
+          "questions": [
+            {
+              "id": "q-31",
+              "number": 31,
+              "text": "Believed that humans always make rational decisions",
+              "correctAnswer": "D",
+              "explanation": "Классическая экономика предполагала, что люди — рациональные субъекты.",
+              "passageHighlight": { "startText": "classical economics assumed", "endText": "maximizes their utility" }
+            },
+            {
+              "id": "q-32",
+              "number": 32,
+              "text": "Showed that people experience losses more intensely than gains",
+              "correctAnswer": "A",
+              "explanation": "Канеман и Тверски разработали теорию перспектив.",
+              "passageHighlight": { "startText": "Kahneman and Tversky demonstrated", "endText": "equivalent gain" }
+            },
+            {
+              "id": "q-33",
+              "number": 33,
+              "text": "Demonstrated that people tend to conform to group opinions",
+              "correctAnswer": "B",
+              "explanation": "Эксперименты Аша в 1950-х годах о конформизме.",
+              "passageHighlight": { "startText": "Solomon Asch's experiments", "endText": "clearly wrong" }
+            },
+            {
+              "id": "q-34",
+              "number": 34,
+              "text": "Proposed the concept of 'nudging' people toward better decisions",
+              "correctAnswer": "C",
+              "explanation": "Талер и Санстейн популяризировали архитектуру выбора в книге 'Nudge'.",
+              "passageHighlight": { "startText": "Richard Thaler and Cass Sunstein", "endText": "Nudge" }
+            }
+          ]
+        },
+        {
+          "id": "qg-9",
+          "type": "matching-sentence-endings",
+          "title": "Questions 35–37",
+          "instruction": "Complete each sentence with the correct ending, <strong>A–F</strong>, below.",
+          "options": [
+            { "id": "A", "text": "A they become more conservative in their judgments." },
+            { "id": "B", "text": "B how easily they can recall similar events." },
+            { "id": "C", "text": "C the mathematical facts are unchanged." },
+            { "id": "D", "text": "D it restricts people's freedom of choice." },
+            { "id": "E", "text": "E reinforcing people's existing beliefs." },
+            { "id": "F", "text": "F people's perceptions can be altered." }
+          ],
+          "questions": [
+            {
+              "id": "q-35",
+              "number": 35,
+              "text": "The availability heuristic leads people to assess probability based on",
+              "correctAnswer": "B",
+              "explanation": "Эвристика доступности: люди оценивают вероятность по тому, насколько легко вспоминают примеры.",
+              "passageHighlight": { "startText": "the availability heuristic causes", "endText": "statistical probability" }
+            },
+            {
+              "id": "q-36",
+              "number": 36,
+              "text": "When people make many decisions in a row,",
+              "correctAnswer": "A",
+              "explanation": "Усталость от решений: качество решений ухудшается, люди выбирают более консервативные варианты.",
+              "passageHighlight": { "startText": "Decision fatigue", "endText": "default decisions" }
+            },
+            {
+              "id": "q-37",
+              "number": 37,
+              "text": "Social media creates echo chambers by",
+              "correctAnswer": "E",
+              "explanation": "Социальные сети усиливают эффект эхо-камер, подкрепляя существующие убеждения.",
+              "passageHighlight": { "startText": "social media amplifies", "endText": "contradictory evidence" }
+            }
+          ]
+        },
+        {
+          "id": "qg-10",
+          "type": "multiple-choice-multi",
+          "title": "Questions 38–39",
+          "instruction": "Choose <strong>TWO</strong> letters, <strong>A–E</strong>.",
+          "chooseCount": 2,
+          "navGrouped": true,
+          "questions": [
+            {
+              "id": "q-38",
+              "number": 38,
+              "text": "Which TWO examples of choice architecture are mentioned in the passage?",
+              "options": [
+                { "id": "a", "text": "A Limiting the number of choices available" },
+                { "id": "b", "text": "B Placing healthy food at eye level" },
+                { "id": "c", "text": "C Making retirement savings opt-out by default" },
+                { "id": "d", "text": "D Providing detailed nutritional information" },
+                { "id": "e", "text": "E Banning unhealthy food from shops" }
+              ],
+              "correctAnswer": ["b", "c"],
+              "explanation": "В тексте приведены два примера: расположение здоровой еды на уровне глаз и пенсионные планы по умолчанию.",
+              "passageHighlight": { "startText": "placing healthier food options", "endText": "rather than opt-in" }
+            },
+            {
+              "id": "q-39",
+              "number": 39,
+              "text": "Which TWO examples of choice architecture are mentioned in the passage?",
+              "options": [
+                { "id": "a", "text": "A Limiting the number of choices available" },
+                { "id": "b", "text": "B Placing healthy food at eye level" },
+                { "id": "c", "text": "C Making retirement savings opt-out by default" },
+                { "id": "d", "text": "D Providing detailed nutritional information" },
+                { "id": "e", "text": "E Banning unhealthy food from shops" }
+              ],
+              "correctAnswer": ["b", "c"],
+              "explanation": "В тексте приведены два примера: расположение здоровой еды на уровне глаз и пенсионные планы по умолчанию.",
+              "passageHighlight": { "startText": "placing healthier food options", "endText": "rather than opt-in" }
+            }
+          ]
+        },
+        {
+          "id": "qg-11",
+          "type": "multiple-choice-single",
+          "title": "Question 40",
+          "instruction": "Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.",
+          "questions": [
+            {
+              "id": "q-40",
+              "number": 40,
+              "text": "What is the writer's main purpose in this passage?",
+              "options": [
+                { "id": "a", "text": "A To argue that all human decisions are irrational" },
+                { "id": "b", "text": "B To explain the systematic biases that affect human decision-making" },
+                { "id": "c", "text": "C To promote the work of Kahneman and Tversky" },
+                { "id": "d", "text": "D To criticize classical economic theory" }
+              ],
+              "correctAnswer": "b",
+              "explanation": "Главная цель автора — объяснить систематические ошибки в принятии решений.",
+              "passageHighlight": { "startText": "decades of research", "endText": "than previously believed" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

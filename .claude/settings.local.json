@@ -3,9 +3,14 @@
     "allow": [
       "Bash(export PATH=\"$HOME/.npm-global/bin:$PATH\")",
       "Bash(agent-browser:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(node -e:*)"
     ]
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "figma",
     "codex"
